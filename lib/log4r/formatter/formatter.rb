@@ -15,6 +15,9 @@ module Log4r
     # Define this method in a subclass to format data.
     def format(logevent)
     end
+
+    def call(severity, time, progname, msg)
+    end
   end
 
   # SimpleFormatter produces output like this:

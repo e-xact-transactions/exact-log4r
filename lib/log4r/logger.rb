@@ -17,6 +17,8 @@ module Log4r
     attr_reader :name, :fullname, :path, :level, :parent
     attr_reader :additive, :trace, :outputters
 
+    attr_writer :formatter
+
     # Logger requires a name. The last 3 parameters are:
     #
     # level::     Do I have a level? (Otherwise, I'll inherit my parent's)
